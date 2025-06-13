@@ -18,64 +18,64 @@
 
     <section class="ftco-section services-section">
         <div class="container">
-            <div class="row justify-content-center ">
-                <div class="col-md-8 heading-section text-center ftco-animate">
-                    <h2 class="mb-1">Nos <span style="color:tomato">Services</span> Clés</h2>
-                    <img class="mb-3" src="{{ asset('assets/images/bg/soulign.png') }}"
-                    alt="Soulignement décoratif"
-                    style="display: block; margin: 10px auto 0; height: 25px;">
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 heading-section text-center ftco-animate">
+              <h2 class="mb-1">Nos <span>Services</span> Clés</h2>
+              <img
+                class="mb-3"
+                src="{{ asset('assets/images/bg/soulign.png') }}"
+                alt="Soulignement décoratif"
+              />
             </div>
-            <div class="row d-flex no-gutters">
+          </div>
+          <div class="row no-gutters">
 
-                <!-- Représentation commerciale -->
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="line"></div>
-                        <div class="icon mb-3">
-                            <span class="flaticon-web-programming"></span> <!-- Icône compatible -->
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Représentation commerciale</h3>
-                            <p>Nous vous aidons à développer vos ventes à travers des actions ciblées et efficaces sur le
-                                terrain.</p>
-                        </div>
-                    </div>
+            <!-- Représentation commerciale -->
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block">
+                <div class="line"></div>
+                <div class="icon mb-3">
+                  <i class="fa-solid fa-chart-line"></i>
                 </div>
-
-                <!-- Marketing relationnel -->
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="line"></div>
-                        <div class="icon mb-3">
-                            <span class="flaticon-stats"></span> <!-- Icône compatible -->
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Marketing relationnel</h3>
-                            <p>Créez un lien durable avec vos clients grâce à nos stratégies de marketing personnalisées.
-                            </p>
-                        </div>
-                    </div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Représentation commerciale</h3>
+                  <p>Nous vous aidons à développer vos ventes à travers des actions ciblées et efficaces sur le terrain.</p>
                 </div>
-
-                <!-- Formation -->
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="line"></div>
-                        <div class="icon mb-3">
-                            <span class="flaticon-presentation"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Formation</h3>
-                            <p>Nous formons vos équipes pour les rendre plus performantes, motivées et prêtes à relever tous
-                                les défis.</p>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+
+            <!-- Marketing relationnel -->
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block">
+                <div class="line"></div>
+                <div class="icon mb-3">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Marketing relationnel</h3>
+                  <p>Créez un lien durable avec vos clients grâce à nos stratégies de marketing personnalisées.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formation -->
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block">
+                <div class="line"></div>
+                <div class="icon mb-3">
+                  <i class="fa-solid fa-chalkboard-teacher"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Formation</h3>
+                  <p>Nous formons vos équipes pour les rendre plus performantes, motivées et prêtes à relever tous les défis.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-    </section>
+      </section>
+
 
 
 

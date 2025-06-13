@@ -28,6 +28,11 @@ class PagesController extends Controller
     {
         return view('layouts.pages.formation');
     }
+        public function evenement()
+    {
+        return view('layouts.pages.evenement');
+    }
+
 
 
 }

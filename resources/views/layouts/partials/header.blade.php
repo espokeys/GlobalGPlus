@@ -73,7 +73,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="department-single.html"
+                  <a class="dropdown-item" href="{{ route('evenement') }}"
                     >Evenements</a
                   >
                 </li>

@@ -10,9 +10,9 @@
         <div class="col-lg-6 col-md-12 col-xl-7">
           <div class="block">
             <div class="divider mb-3"></div>
-            <span class="text-uppercase text-sm letter-spacing">
-              Expert en représentation, marketing & formation
-            </span>
+            <span class="text-uppercase text-sm letter-spacing text-white">
+                Acteur du bien-être, de la santé & de la formation
+              </span>
             <h4 class="mb-3 mt-3" style="color: #223a66; font-size: 39px;">
                 <span style="display: block; margin-bottom: 20px;">
                   Agence experte en représentation,
@@ -22,13 +22,10 @@
                 </span>
               </h4>
 
-
-
-            <p class="mb-4 pr-5">
-              Global G+ vous accompagne dans la représentation commerciale,
-              le marketing relationnel et la formation, pour propulser votre activité
-              vers de nouveaux sommets.
-            </p>
+            <h6 class="mb-4 mt-5 text-white">
+                Bienvenue chez Global G+, où innovation, santé et formation
+                se rencontrent pour améliorer durablement la vie des populations.
+            </h6>
             <div class="btn-container">
               <a
                 href="{{ route('contact') }}"
@@ -117,9 +114,10 @@
                     Votre santé,<br /> & notre priorité
                 </h2>
                 <p class="mt-4 mb-5">
-                  Global G+ est une entreprise engagée dans la représentation commerciale,
-                  le marketing relationnel et la formation. Elle propose également des produits
-                  et solutions favorisant une bonne santé et un meilleur bien-être.
+                    Depuis 2013, Global G+ s'engage pour le bien-être et la qualité de vie des populations togolaises.
+                    En 2024, l'entreprise a introduit au Togo la marque internationale SHINY, spécialisée dans les
+                    compléments alimentaires innovants, distribués via un modèle de marketing relationnel porteur
+                    d'opportunités économiques.
                 </p>
 
                 <a
@@ -180,7 +178,8 @@
                 <h2>Nos domaines d’expertise</h2>
                 <div class="divider mx-auto my-4"></div>
                 <p>
-                  Global G+ vous accompagne avec des solutions professionnelles centrées sur le développement commercial, les relations humaines et le renforcement des compétences.
+                  À travers ses activités, Global G+ combine bien-être, développement personnel et opportunité économique.
+                  Notre réseau repose sur un modèle éprouvé qui allie santé naturelle, marketing de réseau et formation continue.
                 </p>
               </div>
             </div>
@@ -191,11 +190,11 @@
               <div class="service-item mb-4">
                 <div class="icon d-flex align-items-center">
                   <i class="icofont-handshake-deal text-lg"></i>
-                  <h4 class="mt-3 mb-3">Représentation commerciale</h4>
+                  <h4 class="mt-3 mb-3">Distribution & Représentation</h4>
                 </div>
                 <div class="content">
                   <p class="mb-4">
-                    Mise en relation entre entreprises, négociation de contrats, prospection de clients et accompagnement terrain.
+                    Promotion et diffusion des produits SHINY au Togo et en Afrique, via un réseau de bureaux et d’agences privés répartis dans plusieurs pays francophones de la sous-région.
                   </p>
                 </div>
               </div>
@@ -205,33 +204,36 @@
               <div class="service-item mb-4">
                 <div class="icon d-flex align-items-center">
                   <i class="icofont-network text-lg"></i>
-                  <h4 class="mt-3 mb-3">Marketing relationnel</h4>
+                  <h4 class="mt-3 mb-3">Marketing de réseau</h4>
                 </div>
                 <div class="content">
                   <p class="mb-4">
-                    Développement de réseaux, gestion de la relation client, vente directe, accompagnement des équipes et valorisation des performances.
-                </p>
+                    Développement d’un réseau d’adhérents avec un système de rémunération attractif.
+                    Ce mécanisme offre à chacun l’opportunité de générer des revenus stables et d’atteindre une réelle autonomie financière.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-6">
-             <a href="{{ route('formation') }}">
+              <a href="{{ route('formation') }}">
                 <div class="service-item mb-4">
-                    <div class="icon d-flex align-items-center">
-                      <i class="icofont-education text-lg"></i>
-                      <h4 class="mt-3 mb-3">Formation</h4>
-                    </div>
-                    <div class="content">
-                      <p class="mb-4">
-                        Ateliers, séminaires et programmes pour renforcer les compétences commerciales, humaines et professionnelles.
-                      </p>
-                    </div>
-                  </div></a>
+                  <div class="icon d-flex align-items-center">
+                    <i class="icofont-education text-lg"></i>
+                    <h4 class="mt-3 mb-3">Formation & leadership</h4>
+                  </div>
+                  <div class="content">
+                    <p class="mb-4">
+                      Séances de formation sur le leadership, le développement personnel et la stratégie commerciale pour renforcer les compétences de nos adhérents et orateurs.
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
+
 
       <section class="section testimonial-2 gray-bg" style="padding-top: 0px">
         <div class="container">
@@ -241,7 +243,7 @@
                 <h2>Plus de 5000 clients satisfaits</h2>
                 <div class="divider mx-auto my-4"></div>
                 <p>
-                  Depuis de nombreuses années, Global G+ accompagne ses clients dans la représentation commerciale, le marketing relationnel, la formation professionnelle, ainsi que la distribution de produits garantissant une meilleure santé.
+                  Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
                 </p>
               </div>
             </div>
@@ -251,80 +253,58 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-12 testimonial-wrap-2">
+
               <div class="testimonial-block style-2 gray-bg">
                 <i class="icofont-quote-right"></i>
-
                 <div class="testimonial-thumb">
-                  <img
-                    src="{{ asset('assets/images/team/img1.jpg') }}"
-                    alt="Client satisfait"
-                    class="img-fluid"
-                  />
+                  <img src="{{ asset('assets/images/team/img1.jpg') }}" alt="Client satisfait" class="img-fluid" />
                 </div>
-
                 <div class="client-info">
-                  <h4>Service commercial exceptionnel !</h4>
+                  <h4>Une croissance rapide et maîtrisée</h4>
                   <span>Jean Dupont</span>
                   <p>
-                    Grâce à Global G+, notre entreprise a développé son réseau commercial efficacement, avec un accompagnement professionnel et des solutions adaptées à nos besoins.
+                    Grâce à l’expertise de Global G+, notre réseau s’est étendu en un temps record. Leur approche stratégique est à la fois humaine et orientée résultats.
                   </p>
                 </div>
               </div>
 
               <div class="testimonial-block style-2 gray-bg">
                 <div class="testimonial-thumb">
-                  <img
-                    src="{{ asset('assets/images/team/img2.jpg') }}"
-                    alt="Client satisfait"
-                    class="img-fluid"
-                  />
+                  <img src="{{ asset('assets/images/team/img2.jpg') }}" alt="Client satisfait" class="img-fluid" />
                 </div>
-
                 <div class="client-info">
-                  <h4>Formation de qualité !</h4>
+                  <h4>Des formations concrètes et impactantes</h4>
                   <span>Marie Lefèvre</span>
                   <p>
-                    Les formations proposées par Global G+ sont enrichissantes et parfaitement adaptées à nos exigences professionnelles. Une vraie valeur ajoutée pour nos équipes.
+                    Les sessions de formation sont dynamiques et adaptées aux réalités du terrain. Un atout pour nos collaborateurs.
                   </p>
                 </div>
-
                 <i class="icofont-quote-right"></i>
               </div>
 
               <div class="testimonial-block style-2 gray-bg">
                 <div class="testimonial-thumb">
-                  <img
-                    src="{{ asset('assets/images/team/img3.jpg') }}"
-                    alt="Client satisfait"
-                    class="img-fluid"
-                  />
+                  <img src="{{ asset('assets/images/team/img3.jpg') }}" alt="Client satisfait" class="img-fluid" />
                 </div>
-
                 <div class="client-info">
-                  <h4>Produits de santé efficaces !</h4>
+                  <h4>Un vrai impact sur notre bien-être</h4>
                   <span>Luc Martin</span>
                   <p>
-                    Les produits pour la santé distribués par Global G+ ont amélioré notre bien-être au quotidien. Qualité et sérieux garantis.
+                    Les solutions proposées pour la santé ont apporté des résultats visibles. L’efficacité des produits et le suivi sont irréprochables.
                   </p>
                 </div>
-
                 <i class="icofont-quote-right"></i>
               </div>
 
               <div class="testimonial-block style-2 gray-bg">
                 <div class="testimonial-thumb">
-                  <img
-                    src="{{ asset('assets/images/team/img4.jpg') }}"
-                    alt="Client satisfait"
-                    class="img-fluid"
-                  />
+                  <img src="{{ asset('assets/images/team/img4.jpg') }}" alt="Client satisfait" class="img-fluid" />
                 </div>
-
                 <div class="client-info">
-                  <h4>Support client réactif !</h4>
+                  <h4>Accompagnement et écoute active</h4>
                   <span>Sophie Bernard</span>
                   <p class="mt-4">
-                    L'équipe de Global G+ répond toujours rapidement à nos questions et propose des solutions efficaces. Une collaboration fiable et durable.
+                    Un service client à l’écoute, toujours disponible et force de proposition. Une équipe investie dans chaque projet.
                   </p>
                 </div>
                 <i class="icofont-quote-right"></i>
@@ -332,26 +312,23 @@
 
               <div class="testimonial-block style-2 gray-bg">
                 <div class="testimonial-thumb">
-                  <img
-                    src="{{ asset('assets/images/team/img5.jpg') }}"
-                    alt="Client satisfait"
-                    class="img-fluid"
-                  />
+                  <img src="{{ asset('assets/images/team/img5.jpg') }}" alt="Client satisfait" class="img-fluid" />
                 </div>
-
                 <div class="client-info">
-                  <h4>Marketing relationnel performant !</h4>
+                  <h4>Une stratégie relationnelle gagnante</h4>
                   <span>Paul Moreau</span>
                   <p>
-                    Les stratégies de marketing relationnel proposées ont boosté notre fidélisation client. Un vrai partenaire de confiance.
+                    Nos relations clients se sont renforcées grâce à des actions ciblées et pertinentes. Global G+ est un partenaire essentiel dans notre développement.
                   </p>
                 </div>
                 <i class="icofont-quote-right"></i>
               </div>
+
             </div>
           </div>
         </div>
       </section>
+
 
       <section class="section clients">
         <div class="container">
@@ -372,53 +349,53 @@
           <div class="row clients-logo">
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/1.png') }}" alt="Partenaire 1" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 1" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/2.png') }}" alt="Partenaire 2" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/3.png') }}" alt="Partenaire 3" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 3" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/4.png') }}" alt="Partenaire 4" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 4" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/5.png') }}" alt="Partenaire 5" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 5" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/6.png') }}" alt="Partenaire 6" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 6" class="img-fluid" />
               </div>
             </div>
             <!-- Répétition des logos si besoin -->
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/3.png') }}" alt="Partenaire 3" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 3" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/4.png') }}" alt="Partenaire 4" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 4" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/5.png') }}" alt="Partenaire 5" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 5" class="img-fluid" />
               </div>
             </div>
             <div class="col-lg-2">
               <div class="client-thumb">
-                <img src="{{ asset('assets/images/about/6.png') }}" alt="Partenaire 6" class="img-fluid" />
+                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 6" class="img-fluid" />
               </div>
             </div>
           </div>

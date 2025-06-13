@@ -535,6 +535,23 @@ a:focus {
 
 
   }
+  .banner_formation {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    background: url("../images/bg/img13.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 550px;
+  }
+.banner_evenement {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    background: url("../images/bg/img10_2.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 550px;
+  }
+
 
   .ftco-section.services-section {
     margin-bottom: 0px;

@@ -27,6 +27,9 @@ Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 
 Route::get('/formation', [PagesController::class, 'formation'])->name('formation');
 
+Route::get('/evenement', [PagesController::class, 'evenement'])->name('evenement');
+
+
 
 
 

@@ -6,10 +6,10 @@
     <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software" />
     <meta name="author" content="themefisher.com" />
 
-    <title>Novena- Health & Care Medical template</title>
+    <title>Global G+Sarl</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo.jpg') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/animate.css') }}">
 
@@ -50,6 +50,191 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .services-section {
+      padding: 50px 0;
+    }
+
+    .heading-section h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .heading-section span {
+      color: tomato;
+    }
+
+    .heading-section img {
+      display: block;
+      margin: 10px auto 0;
+      height: 25px;
+    }
+
+    .row.no-gutters {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .services {
+      background-color: #d3d3d3; /* fond cendre */
+      transition: background-color 0.3s ease, color 0.3s ease;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+      box-sizing: border-box;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 280px;
+    }
+
+    .services:hover {
+      background-color: tomato;
+      color: white;
+    }
+
+    .services:hover h3,
+    .services:hover p {
+      color: white;
+    }
+
+    .services .icon {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+
+    .services:hover .icon {
+      color: white;
+    }
+
+    .line {
+      width: 50px;
+      height: 3px;
+      background: tomato;
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 767px) {
+      .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Grid system simulation */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .col-md-4 {
+      flex: 0 0 30%;
+      max-width: 30%;
+      box-sizing: border-box;
+    }
+
+
+
+
+
+    .team-page {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-item img {
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(34, 58, 102, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery-item .overlay i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+h4 {
+  font-weight: 600;
+  color: #223a66;
+}
+
+p {
+  color: #555;
+  font-size: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+
+
+.contact-block {
+  height: 200px; /* Hauteur fixe */
+  background-color: #f8f9fa; /* Optionnel : couleur de fond douce */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-block i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-block h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+  </style>
 
 </head>
 

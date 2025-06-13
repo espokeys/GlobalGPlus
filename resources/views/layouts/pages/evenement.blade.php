@@ -3,7 +3,7 @@
 @section('content')
 
 
-  <section class=" page-title banner_formation">
+  <section class=" page-title banner_evenement">
 
     <div class="container">
       <div class="row">
@@ -25,7 +25,7 @@
       <div class="row mb-5">
         <div class="col-12 text-center">
           <h1 style="font-size: 52px; font-weight: 700; color: #223a66;">
-            Nos <span style="color: tomato;">Formations SHINY</span>
+            Nos <span style="color: tomato;">Evenements</span>
           </h1>
           <img src="{{ asset('assets/images/bg/soulign.png') }}" alt="Soulignement décoratif" style="display: block; margin: 10px auto 0; height: 25px;">
         </div>

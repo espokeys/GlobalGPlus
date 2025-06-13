@@ -91,9 +91,9 @@
           <div class="section-title text-center">
             <h2 class="text-md mb-2">Contactez-nous</h2>
             <div class="divider mx-auto my-4"></div>
-            <p class="mb-5">
-              Vous avez une question, un besoin spécifique ou souhaitez simplement nous joindre ? Remplissez le formulaire ci-dessous, notre équipe vous répondra dans les plus brefs délais.
-            </p>
+            <h4 class="mb-5">
+              Vous avez une question, un besoin spécifique ou souhaitez simplement nous joindre ? Remplissez le formulaire ci-dessou.
+            </h4>
           </div>
         </div>
       </div>
