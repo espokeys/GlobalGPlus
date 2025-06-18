@@ -7,48 +7,30 @@
     <meta name="author" content="themefisher.com" />
 
     <title>Global G+Sarl</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ secure_asset('assets/images/logo.jpg') }}" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo.jpg') }}" />
+<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/animate.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/magnific-popup.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/animate.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/flaticon.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/style.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/ITSolutioncss/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/ITSolutioncss/magnific-popup.css') }}">
-
-
-    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/style.css') }}">
-
-    <!-- CSS -->
+<!-- CSS externes -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- Bootstrap, icofont, slick carousel, etc -->
+<link rel="stylesheet" href="{{ secure_asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{ secure_asset('assets/plugins/icofont/icofont.min.css') }}" />
+<link rel="stylesheet" href="{{ secure_asset('assets/plugins/slick-carousel/slick/slick.css') }}" />
+<link rel="stylesheet" href="{{ secure_asset('assets/plugins/slick-carousel/slick/slick-theme.css') }}" />
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const lightbox = GLightbox({
-      selector: '.glightbox'
-    });
-  });
-</script>
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="{{ secure_asset('assets/css/style.css') }}" />
 
-
-    <!----------------------------------------------------------------------------- -->
-
-    <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" />
-    <!-- Icon Font Css -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/icofont/icofont.min.css') }}" />
-    <!-- Slick Slider  CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/slick-carousel/slick/slick.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/plugins/slick-carousel/slick/slick-theme.css') }}" />
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
       <style>
     body {
