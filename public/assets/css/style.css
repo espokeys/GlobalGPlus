@@ -427,36 +427,32 @@ a:focus {
   transition: all .25s ease;
 }
 
-.dropdown-toggle::after {
-  display: none;
-}
-
 .navbar-brand {
   margin-top: 10px;
 }
 
 .dropdown .dropdown-menu {
   position: absolute;
-  display: block;
   background: #fff;
   min-width: 240px;
-  top: 130%;
+  top: 100%;
   left: 0;
-  right: 0px;
-  opacity: 0;
-  padding: 0px;
-  visibility: hidden;
-  transition: all 0.3s ease-out 0s;
-  border: 0px;
+  z-index: 1000;
+  padding: 0;
+  margin-top: 0.5rem;
+  border: 0;
   border-top: 5px solid tomato;
-  border-radius: 0px;
+  border-radius: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown.show .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  top: 115%;
 }
+
 
 .dropdown .dropdown-item {
   padding: 13px 20px;
@@ -473,10 +469,20 @@ a:focus {
 .header-top-bar {
   background: #223a66;
   font-size: 14px;
-  padding: 10px 0px;
+  padding: 10px 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   color: #fff;
 }
+
+.top-bar-info a,
+.top-bar-info i {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ..."); /* ou icône de ton choix */
+}
+
 
 .top-bar-info li a {
   color: #fff;
@@ -503,11 +509,38 @@ a:focus {
 .banner {
   position: relative;
   overflow: hidden;
-  background: #fff;
-  background: url("../images/bg/img6.jpg") no-repeat;
+  background: url("../images/bg/img6.jpg") no-repeat center center;
   background-size: cover;
   min-height: 550px;
 }
+
+.banner .block {
+  padding: 80px 0px 160px;
+}
+
+.banner .block h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+  color: #223a66;
+}
+
+/* Responsive uniquement sur la taille du texte, PAS sur l'image */
+@media (max-width: 768px) {
+  .banner .block h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner .block h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
 .banner_apropos {
     position: relative;
     overflow: hidden;
@@ -564,23 +597,6 @@ a:focus {
     margin-top: 0px;
     padding-top: 10px;
   }
-  .service-block {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-
-  .service-block .content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-
   .about-block-item {
     background: #ffffff; /* ou une couleur douce (#f8f9fa par ex.) */
     border: 1px solid #eee;
@@ -644,25 +660,6 @@ a:focus {
     font-size: 0.95rem;
     color: #666;
   }
-  .service-block:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
-
-
-.banner .block {
-  padding: 80px 0px 160px;
-}
-
-.banner .block h1 {
-  font-size: 60px;
-  line-height: 1.2;
-  letter-spacing: -1.2px;
-  text-transform: capitalize;
-  color: #223a66;
-}
-
 .letter-spacing {
   letter-spacing: 2px;
 }
@@ -679,44 +676,6 @@ a:focus {
   width: 40px;
   height: 5px;
   background: tomato;
-}
-
-@media (max-width: 480px) {
-  .banner .block h1 {
-    font-size: 38px;
-    line-height: 50px;
-  }
-  .banner {
-    min-height: 450px;
-    background: #fff !important;
-  }
-}
-
-@media (max-width: 400px) {
-  .banner .block h1 {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .banner {
-    min-height: 450px;
-    background: #fff !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner .block h1 {
-    font-size: 56px;
-    line-height: 70px;
-  }
-  .banner {
-    background: #fff !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .banner {
-    background: #fff !important;
-  }
 }
 
 .about-img img {
@@ -872,17 +831,40 @@ a:focus {
 }
 
 .service-block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
   padding: 20px;
   margin-top: 40px;
+  border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.03);
-  box-shadow: 0 0 38px rgba(21, 40, 82, 0.07);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.service-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Image dans le bloc 
 .service-block img {
   width: 100%;
   margin-top: -60px;
   border: 5px solid #fff;
+  border-radius: 8px;
 }
+*/
+/* Contenu du bloc */
+.service-block .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 .department-service {
   margin-bottom: 40px;

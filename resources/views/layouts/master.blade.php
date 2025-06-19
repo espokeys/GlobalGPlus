@@ -8,210 +8,233 @@
 
     <title>Global G+Sarl</title>
 
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{{ secure_asset('assets/images/logo.jpg') }}" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo.jpg') }}" />
 
-<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/animate.css') }}">
-<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/owl.carousel.min.css') }}">
-<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/owl.theme.default.min.css') }}">
-<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/animate.css') }}">
 
-<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/flaticon.css') }}">
-<link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/style.css') }}">
-
-<!-- CSS externes -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- Bootstrap, icofont, slick carousel, etc -->
-<link rel="stylesheet" href="{{ secure_asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" />
-<link rel="stylesheet" href="{{ secure_asset('assets/plugins/icofont/icofont.min.css') }}" />
-<link rel="stylesheet" href="{{ secure_asset('assets/plugins/slick-carousel/slick/slick.css') }}" />
-<link rel="stylesheet" href="{{ secure_asset('assets/plugins/slick-carousel/slick/slick-theme.css') }}" />
-
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="{{ secure_asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/ITSolutioncss/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/ITSolutioncss/magnific-popup.css') }}">
 
 
-      <style>
+    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/ITSolution/css/style.css') }}">
 
-    .services-section {
-      padding: 50px 0;
-    }
-
-    .heading-section h2 {
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .heading-section span {
-      color: tomato;
-    }
-
-    .heading-section img {
-      display: block;
-      margin: 10px auto 0;
-      height: 25px;
-    }
-
-    .row.no-gutters {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    .services {
-      background-color: #d3d3d3; /* fond cendre */
-      transition: background-color 0.3s ease, color 0.3s ease;
-      padding: 30px 20px;
-      border-radius: 10px;
-      text-align: center;
-      width: 100%;
-      cursor: pointer;
-      box-sizing: border-box;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 280px;
-    }
-
-    .services:hover {
-      background-color: tomato;
-      color: white;
-    }
-
-    .services:hover h3,
-    .services:hover p {
-      color: white;
-    }
-
-    .services .icon {
-      font-size: 50px;
-      margin-bottom: 20px;
-      color: #555;
-      transition: color 0.3s ease;
-    }
-
-    .services:hover .icon {
-      color: white;
-    }
-
-    .line {
-      width: 50px;
-      height: 3px;
-      background: tomato;
-      margin: 0 auto 20px;
-      border-radius: 2px;
-    }
-
-    /* Responsive */
-    @media (max-width: 767px) {
-      .col-md-4 {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-    }
-
-    /* Grid system simulation */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .col-md-4 {
-      flex: 0 0 30%;
-      max-width: 30%;
-      box-sizing: border-box;
-    }
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = GLightbox({
+                selector: '.glightbox'
+            });
+        });
+    </script>
 
 
+    <!----------------------------------------------------------------------------- -->
 
-    .team-page {
-  padding: 80px 0;
-  background: #f8f9fa;
-}
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" />
+    <!-- Icon Font Css -->
+    <link rel="stylesheet" href="{{ asset('assets/plugins/icofont/icofont.min.css') }}" />
+    <!-- Slick Slider  CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/plugins/slick-carousel/slick/slick.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/plugins/slick-carousel/slick/slick-theme.css') }}" />
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-}
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
-.gallery-item img {
-  transition: transform 0.4s ease;
-}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-.gallery-item:hover img {
-  transform: scale(1.05);
-}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-.gallery-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(34, 58, 102, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
 
-.gallery-item:hover .overlay {
-  opacity: 1;
-}
+    <style>
+        .services-section {
+            padding: 50px 0;
+        }
 
-.gallery-item .overlay i {
-  color: #fff;
-  font-size: 2rem;
-}
+        .heading-section h2 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
 
-h4 {
-  font-weight: 600;
-  color: #223a66;
-}
+        .heading-section span {
+            color: tomato;
+        }
 
-p {
-  color: #555;
-  font-size: 15px;
-  max-width: 300px;
-  margin: 0 auto;
-}
+        .heading-section img {
+            display: block;
+            margin: 10px auto 0;
+            height: 25px;
+        }
+
+        .row.no-gutters {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .services {
+            background-color: #d3d3d3;
+            /* fond cendre */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 280px;
+        }
+
+        .services:hover {
+            background-color: tomato;
+            color: white;
+        }
+
+        .services:hover h3,
+        .services:hover p {
+            color: white;
+        }
+
+        .services .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .services:hover .icon {
+            color: white;
+        }
+
+        .line {
+            width: 50px;
+            height: 3px;
+            background: tomato;
+            margin: 0 auto 20px;
+            border-radius: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 767px) {
+            .col-md-4 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Grid system simulation */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-md-4 {
+            flex: 0 0 30%;
+            max-width: 30%;
+            box-sizing: border-box;
+        }
 
 
 
 
-.contact-block {
-  height: 200px; /* Hauteur fixe */
-  background-color: #f8f9fa; /* Optionnel : couleur de fond douce */
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.contact-block i {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
+        .team-page {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
 
-.contact-block h5 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
 
-  </style>
+        .gallery-item img {
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(34, 58, 102, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay i {
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-weight: 600;
+            color: #223a66;
+        }
+
+        p {
+            color: #555;
+            font-size: 15px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+
+
+
+        .contact-block {
+            height: 200px;
+            /* Hauteur fixe */
+            background-color: #f8f9fa;
+            /* Optionnel : couleur de fond douce */
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-block i {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .contact-block h5 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+    </style>
 
 </head>
 
