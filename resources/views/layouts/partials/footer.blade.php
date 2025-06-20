@@ -34,8 +34,8 @@
           <ul class="list-unstyled footer-menu lh-lg">
             <li><a href="{{ route('apropos') }}">À propos</a></li>
             <li><a href="{{ route('service') }}">Services</a></li>
-            <li><a href="{{ route('service') }}">Formation</a></li>
-            <li><a href="{{ route('service') }}">Produits Santé</a></li>
+            <li><a href="{{ route('formation') }}">Formation</a></li>
+            <li><a href="{{ route('evenement') }}">Evenement</a></li>
           </ul>
         </div>
       </div>

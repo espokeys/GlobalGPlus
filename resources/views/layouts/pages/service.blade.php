@@ -759,9 +759,11 @@
                         <h2 class="mb-5 text-lg  text-white">
                             <span class="title-color text-white">Retrouvez la santé</span> naturellement
                         </h2>
-                        <a href="{{ route('contact') }}" class="btn btn-main-2 btn-round-full">
-                            Prendre rendez-vous<i class="icofont-simple-right ml-2"></i>
-                        </a>
+                        <div class="btn-container">
+                            <a href="{{ route('contact') }}" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">
+                                Prendre rendez-vous <i class="icofont-simple-right ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

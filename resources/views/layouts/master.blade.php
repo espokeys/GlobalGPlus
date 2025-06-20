@@ -59,6 +59,31 @@
 
 
     <style>
+        .btn-container a {
+            background-color: #223a66;
+            color: #fff;
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px white;
+            text-decoration: none;
+        }
+
+        .btn-container a:hover {
+            background-color: tomato;
+            /* plus foncé */
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .about-content p {
             padding-left: 0 !important;
             margin-left: 0 !important;
@@ -157,10 +182,6 @@
             max-width: 30%;
             box-sizing: border-box;
         }
-
-
-
-
 
         .team-page {
             padding: 80px 0;

@@ -4,7 +4,6 @@
     <!-- Slider Start -->
     <!-- -->
     <section class="banner position-relative overflow-hidden" style="min-height: 550px;">
-
         <!-- Carousel en arrière-plan -->
         <div id="bannerCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100"
             data-bs-ride="carousel" data-bs-interval="3000" style="z-index: 0;">
@@ -24,6 +23,9 @@
             </div>
         </div>
 
+        <!-- ✅ Overlay renforcé -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(34, 58, 102, 0.4); z-index: 0.5;">
+        </div>
         <!-- Contenu texte au-dessus -->
         <div class="container position-relative" style="z-index: 1;">
             <div class="row">
@@ -49,11 +51,13 @@
                                 Prendre rendez-vous <i class="icofont-simple-right ml-2"></i>
                             </a>
                         </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="features d-none d-lg-block">
         <div class="container">
@@ -113,7 +117,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="section about">
         <div class="container">
@@ -264,16 +267,71 @@
         </div>
     </section>
 
+    <section
+        style="background: linear-gradient(rgba(34, 58, 102, 0.9), rgba(34, 58, 102, 0.9)),
+                url('{{ asset('assets/images/service/img4.jpg') }}') center center/cover no-repeat;
+                color: #fff; padding: 80px 0;">
+        <div class="container text-center mt-5">
+            <h2 style="font-weight: bold; color: #d0e7ff;">
+                « FAIRE DE GLOBAL G+ SARL UN ACTEUR DE CHANGEMENT POSITIF. »
+            </h2>
+            <p class="mt-3 mb-5 text-white">
+                GLOBAL G+ SARL accompagne les entreprises et particuliers vers un avenir plus innovant,
+                plus sûr et durable.
+            </p>
+
+            <div class="row text-start justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3 text-center">
+                        <i class="fas fa-leaf fa-2x" style="color: tomato;"></i>
+                    </div>
+                    <h5 class="text-light">Notre mission</h5>
+                    <p class="text-white">
+                        Accompagner les professionnels et institutions dans la digitalisation,
+                        l’assurance, et la croissance durable à travers des solutions sur mesure.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3 text-center">
+                        <i class="fas fa-eye fa-2x" style="color: tomato;"></i>
+                    </div>
+                    <h5 class="text-light">Notre vision</h5>
+                    <p class="text-white">
+                        Être reconnu comme un leader africain dans la transformation numérique, le
+                        conseil et les services innovants au service du développement.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3 text-center">
+                        <i class="fas fa-star fa-2x" style="color: tomato;"></i>
+                    </div>
+                    <h5 class="text-light">Nos valeurs</h5>
+                    <p class="text-white">
+                        <strong>EXCELLENCE</strong> : Offrir des solutions performantes<br>
+                        <strong>INTÉGRITÉ</strong> : Agir avec honnêteté<br>
+                        <strong>INNOVATION</strong> : Répondre par la technologie<br>
+                        <strong>IMPACT</strong> : Contribuer au progrès collectif
+                    </p>
+                </div>
+            </div>
+
+            <a href="{{route('apropos')}}" class="btn mt-4 px-4 py-2"
+                style="background: tomato; color: white; font-weight: bold; border-radius: 5px;">
+                <i class="fas fa-arrow-right me-2"></i> En savoir plus
+            </a>
+        </div>
+    </section>
+
     <section class="section testimonial-2 gray-bg" style="padding-top: 0px">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center  ">
                 <div class="col-lg-7">
-                    <div class="section-title text-center">
+                    <div class="section-title text-center mt-5">
                         <h2>Plus de 5000 clients satisfaits</h2>
                         <div class="divider mx-auto my-4"></div>
                         <!--     <p>
-                                                                                                              Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
-                                                                                                            </p> -->
+                                                                                                                                                                                      Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
+                                                                                                                                                                                    </p> -->
                     </div>
                 </div>
             </div>
@@ -367,6 +425,42 @@
         </div>
     </section>
 
+    <section class="py-5 text-white"
+        style="background: linear-gradient(rgba(34, 58, 102, 0.85), rgba(34, 58, 102, 0.85)),
+           url('{{ asset('assets/images/service/img6.jpg') }}') center center/cover no-repeat;">
+        <div class="container">
+            <!-- Forcer la ligne même sur petits écrans avec d-flex flex-row -->
+            <div class="d-flex flex-row flex-wrap align-items-center justify-content-center">
+                <!-- Texte à gauche -->
+                <div class="text-center text-lg-start" style="max-width: 45%; min-width: 280px; margin-right: 2rem;">
+                    <h2 class="mb-4">GLOBAL G+ SARL – C 24/7 Natura-Ceuticals</h2>
+                    <p class="text-white">
+                        Complément alimentaire parmi les plus riches en nutriments du marché mondial, C24/7 contient le plus
+                        grand nombre d'antioxydants et de phytonutriments en un seul produit. Les ingrédients de C24/7
+                        agissent en synergie pour un résultat optimal, ce qui en fait le produit anti-âge le plus puissant
+                        de l'histoire de la supplémentation.
+                    </p>
+                    <p class="text-white">
+                        C24/7 introduit un nouveau concept de compléments alimentaires pour une santé et une énergie
+                        quotidiennes optimales grâce à une gamme plus large de nutriments parfaitement équilibrés, offrant
+                        des bienfaits essentiels pour la santé dans trois domaines clés : les essentiels quotidiens, les
+                        énergisants végétaux et les antioxydants.
+                    </p>
+                    <a href="{{ route('service') }}" class="btn mt-4 px-4 py-2 mx-auto d-block"
+                        style="background: tomato; color: white; font-weight: bold; border-radius: 5px; max-width: 200px;">
+                        <i class="fas fa-shopping-cart me-2"></i> VOIR LES PRODUITS
+                    </a>
+                </div>
+
+                <!-- Image à droite -->
+                <div style="max-width: 45%; min-width: 280px; text-align: center;">
+                    <img src="{{ asset('assets/images/service/img100.png') }}" alt="Produit C24/7" class="img-fluid"
+                        style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section clients">
         <div class="container">
             <div class="row justify-content-center">
@@ -384,10 +478,10 @@
                     <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 1" class="img-fluid" />
                 </div>
                 <!--
-                                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                                    <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
-                                  </div>
-                                  -->
+                                                                                                          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+                                                                                                            <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
+                                                                                                          </div>
+                                                                                                          -->
             </div>
         </div>
     </section>

@@ -8,8 +8,7 @@
                 <div class="col-md-12">
                     <div class="block text-center">
                         <h1 class="text-capitalize mb-4 text-lg">Parlez-nous de votre besoin</h1>
-                        <p class="text-white-50">Remplissez notre formulaire ou appelez-nous. Nous sommes là pour vous
-                            accompagner.</p>
+                        <p class="text-white-50">Nous sommes là pour vous accompagner.</p>
 
                     </div>
                 </div>
@@ -83,7 +82,6 @@
         </div>
     </section>
 
-
     <section class="contact-form-wrap section">
         <div class="container">
             <div class="row justify-content-center">
@@ -155,8 +153,6 @@
             </div>
         </div>
     </section>
-
-
 
     <div class="google-map">
         <iframe

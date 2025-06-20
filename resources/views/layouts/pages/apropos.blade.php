@@ -35,14 +35,13 @@
         </div>
     </section>
 
-
     <section class="section about-page">
         <div class="container">
             <!-- Bienvenue centré en haut avec soulignement -->
             <div class="row mb-5">
                 <div class="col-12 text-center">
                     <h1 style="font-size: 52px; font-weight: 700; color: #223a66;"><span
-                            style="color:tomato">B</span>ienvenue</h1>
+                            style="color:#223a66">B</span>ienvenue</h1>
                     <img src="{{ asset('assets/images/bg/soulign.png') }}" alt="Soulignement décoratif"
                         style="display: block; margin: 10px auto 0; height: 25px;">
                 </div>
@@ -72,7 +71,58 @@
         </div>
     </section>
 
-    <section class="feature-page">
+    <section
+        style="background: linear-gradient(rgba(195, 205, 221, 0.9), rgba(97, 114, 145, 0.9)),
+                url('{{ asset('assets/images/service/img4.jpg') }}') center center/cover no-repeat;
+                color: #fff; padding: 80px 0;">
+        <div class="container text-center mt-5 ">
+            <h2 class="mb-5" style="font-weight: bold; color: #223a66;">
+                « FAIRE DE GLOBAL G+ SARL UN ACTEUR DE CHANGEMENT POSITIF. »
+            </h2>
+
+            <div class="row text-start justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3 text-center">
+                        <i class="fas fa-leaf fa-2x" style="color: tomato;"></i>
+                    </div>
+                    <h5 class="text-light">Notre mission</h5>
+                    <p class="text-white">
+                        Accompagner les professionnels et institutions dans la digitalisation,
+                        l’assurance, et la croissance durable à travers des solutions sur mesure.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3 text-center">
+                        <i class="fas fa-eye fa-2x" style="color: tomato;"></i>
+                    </div>
+                    <h5 class="text-light">Notre vision</h5>
+                    <p class="text-white">
+                        Être reconnu comme un leader africain dans la transformation numérique, le
+                        conseil et les services innovants au service du développement.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="mb-3 text-center">
+                        <i class="fas fa-star fa-2x" style="color: tomato;"></i>
+                    </div>
+                    <h5 class="text-light">Nos valeurs</h5>
+                    <p class="text-white">
+                        <strong>EXCELLENCE</strong> : Offrir des solutions performantes<br>
+                        <strong>INTÉGRITÉ</strong> : Agir avec honnêteté<br>
+                        <strong>INNOVATION</strong> : Répondre par la technologie<br>
+                        <strong>IMPACT</strong> : Contribuer au progrès collectif
+                    </p>
+                </div>
+            </div>
+
+            <a href="{{ route('apropos') }}" class="btn mt-4 px-4 py-2"
+                style="background: #223a66; color: white; font-weight: bold; border-radius: 5px;">
+                <i class="fas fa-arrow-right me-2"></i> En savoir plus
+            </a>
+        </div>
+    </section>
+
+    <section class="feature-page mt-5">
         <div class="container">
             <h1 class="mt-0 mb-5 text-center" style="font-size: 42px; font-weight: 700; color: #223a66;">
                 Nos Réalisations
@@ -125,138 +175,90 @@
             </div>
         </div>
     </section>
-    <!--
-                    <section class="section awards">
-                        <div class="container">
-                            <div class="row align-items-center">
 
-                                <div class="col-lg-12">
-                                    <h2 class="title-color text-center mb-5" style="font-size: 42px; font-weight: 700; color: #223a66;">
-                                        Résultats de nos produits</h2>
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <div class="award-img text-center">
-                                                <img src="{{ asset('assets/images/about/3.png') }}" alt="Guérison de l'arthrite"
-                                                    class="img-fluid">
-                                                <p class="mt-2">Amélioration notable des cas d’<strong>arthrite</strong> grâce à nos
-                                                    solutions naturelles.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <div class="award-img text-center">
-                                                <img src="{{ asset('assets/images/about/4.png') }}" alt="Guérison de l'insomnie"
-                                                    class="img-fluid">
-                                                <p class="mt-2">Soulagement efficace des troubles du <strong>sommeil</strong>, y compris
-                                                    l’insomnie chronique.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <div class="award-img text-center">
-                                                <img src="{{ asset('assets/images/about/1.png') }}" alt="Guérison des infections"
-                                                    class="img-fluid">
-                                                <p class="mt-2">Renforcement des défenses naturelles contre diverses
-                                                    <strong>infections</strong>.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <div class="award-img text-center">
-                                                <img src="{{ asset('assets/images/about/2.png') }}" alt="Guérison des maux de tête"
-                                                    class="img-fluid">
-                                                <p class="mt-2">Réduction significative des <strong>maux de tête</strong> et migraines de
-                                                    manière naturelle.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <div class="award-img text-center">
-                                                <img src="{{ asset('assets/images/about/5.png') }}" alt="Guérison des troubles digestifs"
-                                                    class="img-fluid">
-                                                <p class="mt-2">Amélioration du confort intestinal et traitement des <strong>troubles
-                                                        digestifs</strong>.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <div class="award-img text-center">
-                                                <img src="{{ asset('assets/images/about/6.png') }}" alt="Guérison de la fatigue chronique"
-                                                    class="img-fluid">
-                                                <p class="mt-2">Lutte contre la <strong>fatigue chronique</strong> et restauration
-                                                    durable
-                                                    de l’énergie.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                -->
-    <section class="section team">
+    <section class="py-5 text-white mt-5 mb-5"
+        style="background: linear-gradient(rgba(34, 58, 102, 0.85), rgba(34, 58, 102, 0.85)), url('{{ asset('assets/images/service/img6.jpg') }}') center center/cover no-repeat;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-center">
-                        <h2 class="mb-4" style="font-size: 42px; font-weight: 700; color: #223a66;">Rencontrez notre
-                            équipe d'experts</h2>
-                        <div class="divider mx-auto my-4"></div>
-                        <p>Une équipe passionnée, engagée à créer des solutions naturelles efficaces pour améliorer votre
-                            santé, renforcer votre bien-être et transformer votre quotidien.</p>
-                    </div>
-                </div>
-            </div>
+                <div class="col-lg-10">
+                    <div class=" pipotext-center px-3">
+                        <h3 class="mb-3 text-center" style="font-size: 34px; font-weight: 700; color: white;">
+                            Rencontre avec M. Shérif Goungou
+                        </h3>
+                        <p class="fw-semibold mb-3" style="font-size: 17px; color: white;">
+                            PDG GLOBAL G+ sarl & Consultant en MLM
+                        </p>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-block mb-5 mb-lg-0">
-                        <img src="{{ asset('assets/images/team/img6.jpg') }}" alt="Alice Dupont - Expert en formulation"
-                            class="img-fluid w-100">
-                        <div class="content">
-                            <h4 class="mt-0 mb-0">Alice Dupont</h4>
-                            <p>Spécialiste en formulation de produits naturels, elle conçoit des solutions innovantes
-                                adaptées à vos besoins.</p>
-                        </div>
-                    </div>
-                </div>
+                        <div class="divider mx-auto mb-4"
+                            style="width: 60px; height: 4px; background-color: white; border-radius: 5px;"></div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-block mb-5 mb-lg-0">
-                        <img src="{{ asset('assets/images/team/img13.jpg') }}" alt="Marc Leroy - Chercheur en santé"
-                            class="img-fluid w-100">
-                        <div class="content">
-                            <h4 class="mt-0 mb-0">Marc Leroy</a></h4>
-                            <p>Chercheur passionné en santé et innovations pharmaceutiques, il veille à l’efficacité et à la
-                                sécurité de nos formules.</p>
-                        </div>
-                    </div>
-                </div>
+                        <h6 class="lead fw-normal mb-3" style="font-size: 17px; color: white;">
+                            « En 1 an, SHINY Togo dispose d’un impressionnant réseau d’adhérents et consommateurs avec une
+                            amélioration notable de la qualité de vie. »
+                        </h6>
 
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-block mb-5 mb-lg-0">
-                        <img src="{{ asset('assets/images/team/img19.jpg') }}" alt="Sonia Martin - Responsable qualité"
-                            class="img-fluid w-100">
-                        <div class="content">
-                            <h4 class="mt-0 mb-0">Sonia Martin</a></h4>
-                            <p>Responsable qualité, elle garantit la conformité et la rigueur de chaque produit que nous
-                                mettons à votre disposition.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team-block">
-                        <img src="{{ asset('assets/images/team/img21.jpg') }}"
-                            alt="Karim Benali - Spécialiste réglementation" class="img-fluid w-100">
-                        <div class="content">
-                            <h4 class="mt-0 mb-0">Karim Benali</a></h4>
-                            <p>Expert en réglementation et conformité, il veille à ce que nos produits respectent les normes
-                                les plus strictes du secteur.</p>
-                        </div>
+                        <h6 style="font-size: 15.5px; line-height: 1.7; color: white;">
+                            GLOBAL G+ est une entreprise sociale togolaise œuvrant dans le bien-être, la formation et
+                            l’amélioration de la qualité de vie. Née en 2013, elle détecte et promeut les meilleures
+                            opportunités santé, notamment via SHINY, une compagnie internationale spécialisée dans les
+                            compléments alimentaires révolutionnaires.
+                        </h6>
+                        <style>
+                            .about-content p {
+                                padding-left: 0 !important;
+                                margin-left: 0 !important;
+                                text-indent: 0 !important;
+                            }
+                        </style>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--
+            <section class="section team py-5">
+                <div class="container">
+                    <div class="row mt-4">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="team-block bg-white rounded-3 shadow-sm h-100 p-3 text-center">
+                                <img src="{{ asset('assets/images/team/img6.jpg') }}" alt="Alice Dupont"
+                                    class="img-fluid rounded mb-3">
+                                <p class="text-dark mb-0">Spécialiste en formulation de produits naturels, elle conçoit des
+                                    solutions innovantes adaptées à vos besoins.</p>
+                            </div>
+                        </div>
 
-    <section class="section testimonial">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="team-block bg-white rounded-3 shadow-sm h-100 p-3 text-center">
+                                <img src="{{ asset('assets/images/team/img13.jpg') }}" alt="Marc Leroy"
+                                    class="img-fluid rounded mb-3">
+                                <p class="text-dark mb-0">Chercheur passionné en santé et innovations pharmaceutiques, il veille à
+                                    l’efficacité et à la sécurité de nos formules.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="team-block bg-white rounded-3 shadow-sm h-100 p-3 text-center">
+                                <img src="{{ asset('assets/images/team/img19.jpg') }}" alt="Sonia Martin"
+                                    class="img-fluid rounded mb-3">
+                                <p class="text-dark mb-0">Responsable qualité, elle garantit la conformité et la rigueur de chaque
+                                    produit que nous mettons à votre disposition.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="team-block bg-white rounded-3 shadow-sm h-100 p-3 text-center">
+                                <img src="{{ asset('assets/images/team/img21.jpg') }}" alt="Karim Benali"
+                                    class="img-fluid rounded mb-3">
+                                <p class="text-dark mb-0">Expert en réglementation et conformité, il veille à ce que nos produits
+                                    respectent les normes les plus strictes du secteur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        -->
+    <section class="section testimonial mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 d-block d-lg-none mb-4">
