@@ -51,7 +51,7 @@
                                 Prendre rendez-vous <i class="icofont-simple-right ml-2"></i>
                             </a>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -75,9 +75,12 @@
                                 Nous sommes spécialisés dans la Représentation commerciale, le Marketing relationnel et la
                                 Formation.
                             </h7>
-                            <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">
-                                Contactez-nous
-                            </a>
+
+                            <div class=" btn-container mt-3">
+                                <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">
+                                    Contactez-nous
+                                </a>
+                            </div>
                         </div>
 
                         <div class="feature-item mb-5 mb-lg-0">
@@ -153,9 +156,11 @@
                         </style>
 
 
-                        <a href="{{ route('service') }}" class="btn btn-main-2 btn-round-full btn-icon">
-                            Nos services<i class="icofont-simple-right ml-3"></i>
-                        </a>
+                        <div class="btn-container">
+                            <a href="{{ route('service') }}" class="btn btn-main-2 btn-round-full btn-icon">
+                                Nos services<i class="icofont-simple-right ml-3"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,7 +320,7 @@
                 </div>
             </div>
 
-            <a href="{{route('apropos')}}" class="btn mt-4 px-4 py-2"
+            <a href="{{ route('apropos') }}" class="btn mt-4 px-4 py-2"
                 style="background: tomato; color: white; font-weight: bold; border-radius: 5px;">
                 <i class="fas fa-arrow-right me-2"></i> En savoir plus
             </a>
@@ -330,8 +335,8 @@
                         <h2>Plus de 5000 clients satisfaits</h2>
                         <div class="divider mx-auto my-4"></div>
                         <!--     <p>
-                                                                                                                                                                                      Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
-                                                                                                                                                                                    </p> -->
+                                                                                                                                                                                          Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
+                                                                                                                                                                                        </p> -->
                     </div>
                 </div>
             </div>
@@ -478,10 +483,10 @@
                     <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 1" class="img-fluid" />
                 </div>
                 <!--
-                                                                                                          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
-                                                                                                            <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
-                                                                                                          </div>
-                                                                                                          -->
+                                                                                                              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+                                                                                                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
+                                                                                                              </div>
+                                                                                                              -->
             </div>
         </div>
     </section>
