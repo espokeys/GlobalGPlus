@@ -1,17 +1,38 @@
 @extends('layouts.master')
 
 @section('content')
-    <section class=" page-title banner_service">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block text-center">
-                        <h1 class="text-capitalize mb-5 text-lg"></h1>
-                    </div>
-                </div>
-            </div>
+<section class="page-title banner_service position-relative overflow-hidden" style="min-height: 550px;">
+  
+  <!-- Carousel en arrière-plan -->
+  <div id="serviceCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="3000" style="z-index: 0;">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img src="{{ asset('assets/images/bg/ggp2.webp') }}" class="d-block w-100 h-100" alt="Slide 1" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="{{ asset('assets/images/bg/img29.jpg') }}" class="d-block w-100 h-100" alt="Slide 2" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="{{ asset('assets/images/bg/img024.jpg') }}" class="d-block w-100 h-100" alt="Slide 3" style="object-fit: cover;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenu texte centré au-dessus -->
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center text-white">
+          <h1 class="text-capitalize mb-5 text-lg">
+            <!-- Ton titre ici -->
+          </h1>
+          <!-- Tu peux ajouter plus de contenu ici si besoin -->
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section class="ftco-section services-section">
         <div class="container">
@@ -75,7 +96,6 @@
                     <h2 class="section-title">Nos types de produits</h2>
                 </div>
             </div>
-
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="service-block">
@@ -133,17 +153,6 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img12.jpg') }}" alt="Formation" class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Vida (Maxx)</h4>
-                            <p>Vida (Maxx) — Pour un cœur sain et une bonne circulation sanguine.
-                                💪 Favorise la santé globale du corps en améliorant le flux sanguin.
-                                🌿 Soutient l’énergie et le bien-être quotidien.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
                         <img src="{{ asset('assets/images/service/img5.jpg') }}" alt="Représentation commerciale"
                             class="img-fluid rounded">
                         <div class="content">
@@ -151,72 +160,6 @@
                             <p>🌿 Natura-Ceuticals — Compléments naturels pour soutenir la santé globale.
                                 Favorise le bien-être général grâce à des ingrédients issus de la nature.
                                 Aide à renforcer le système immunitaire et à maintenir un équilibre sain du corps.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img7.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center  title-color">Représentation commerciale</h4>
-                            <p>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="service-block">
-                                    <img src="{{ asset('assets/images/service/img7.jpg') }}"
-                                        alt="Représentation commerciale" class="img-fluid rounded" />
-                                    <div class="content">
-                                        <h4 class="mt-4 text-center  title-color">BURN Green tea</h4>
-                                        <p>
-                                            🔥 BURN Green Tea – Active ta journée naturellement !
-                                            ✨ Brûle les graisses, booste ton énergie, détoxifie ton corps.
-                                            🍃 100% naturel. 100% efficace.
-                                            💪 Pour un esprit léger et un corps tonique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img7.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center  title-color">BURN Green tea</h4>
-                            <p>
-                                🔥 BURN Green Tea – Active ta journée naturellement !
-                                ✨ Brûle les graisses, booste ton énergie, détoxifie ton corps.
-                                🍃 100% naturel. 100% efficace.
-                                💪 Pour un esprit léger et un corps tonique.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img11.jpg') }}" alt="Formation"
-                            class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Burn Slim RP </h4>
-                            <p>Burn Slim RP – Le pack minceur complet pour transformer votre silhouette !
-                                Brûlez les graisses, boostez votre énergie et contrôlez votre appétit naturellement.
-                                Formulé avec des ingrédients puissants pour un résultat rapide et durable.
-                                Commencez votre parcours minceur dès aujourd’hui avec Burn Slim RP !</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img13.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Vida (Maxx)</h4>
-                            <p>Vida (Maxx) — Pour un cœur sain et une bonne circulation sanguine.
-                                Favorise la santé globale du corps en améliorant le flux sanguin.
-                                🌿 Soutient l’énergie et le bien-être quotidien.</p>
                         </div>
                     </div>
                 </div>
@@ -257,56 +200,6 @@
                                 Rafraîchit l’haleine naturellement.
                                 Effet antibactérien grâce aux extraits de Guava, Myrrhe, Aloe Vera et autres plantes.
                                 ❄️ Sensation de fraîcheur intense sans produits chimiques agressifs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img16.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Naturacentials </h4>
-                            <p>Naturacentials Herbal Toothpaste aide à blanchir naturellement les dents, éliminer les
-                                bactéries, renforcer les gencives et protéger toute la bouche grâce à sa formule 100% à base
-                                de plantes. Une haleine fraîche et une santé bucco-dentaire optimale au naturel !</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img16.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Naturacentials </h4>
-                            <p>🌿 Protège les dents et les gencives contre les infections.
-
-                                🦷 Prévient les caries et la mauvaise haleine.
-                                Rafraîchit l’haleine naturellement.
-                                Effet antibactérien grâce aux extraits de Guava, Myrrhe, Aloe Vera et autres plantes.
-                                ❄️ Sensation de fraîcheur intense sans produits chimiques agressifs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img16.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Naturacentials </h4>
-                            <p>Naturacentials Herbal Toothpaste aide à blanchir naturellement les dents, éliminer les
-                                bactéries, renforcer les gencives et protéger toute la bouche grâce à sa formule 100% à base
-                                de plantes. Une haleine fraîche et une santé bucco-dentaire optimale au naturel !</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img20.jpg') }}" alt="Marketing relationnel"
-                            class="img-fluid rounded">
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p>Nous mettons en place des stratégies pour construire une relation de confiance durable entre
-                                votre entreprise et vos clients.</p>
                         </div>
                     </div>
                 </div>
@@ -460,17 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img33.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">RestorLyf</h4>
-                            <p>RestorLyf aide à revitaliser le corps en stimulant l’énergie naturelle, améliore la
-                                récupération, renforce le système immunitaire et favorise un bien-être global durable.</p>
-                        </div>
-                    </div>
-                </div>
+               
                 <div class="col-lg-4 col-md-6">
                     <div class="service-block">
                         <img src="{{ asset('assets/images/service/img34.jpg') }}" alt="Marketing relationnel"
@@ -663,24 +546,13 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img51.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">CareLeaf</h4>
-                            <p class="mb-4">CareLeaf soulage naturellement les douleurs musculaires et articulaires grâce
-                                à sa technologie de patch à base d’ingrédients végétaux anti-inflammatoires.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
                     <div class="service-block mb-5">
                         <img src="{{ asset('assets/images/service/img52.jpg') }}" alt="Marketing relationnel"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p class="mb-4">Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">CareLeaf</h4>
+                            <p class="mb-4">CareLeaf aide à soulager naturellement les douleurs musculaires et
+                                articulaires grâce à sa technologie de patch chauffant à base d’ingrédients naturels.</p>
                         </div>
                     </div>
                 </div>
@@ -688,9 +560,9 @@
                     <div class="service-block mb-5">
                         <img src="{{ asset('assets/images/service/img53.jpg') }}" alt="Formation" class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Formation</h4>
-                            <p class="mb-4">Nous proposons des formations professionnelles adaptées pour renforcer les
-                                compétences de vos équipes et améliorer leurs performances.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Nos produits</h4>
+                            <p class="mb-4">Nous assurons la promotion et la représentation de vos produits ou services
+                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.</p>
                         </div>
                     </div>
                 </div>
@@ -699,20 +571,9 @@
                         <img src="{{ asset('assets/images/service/img54.jpg') }}" alt="Représentation commerciale"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Représentation commerciale</h4>
-                            <p class="mb-4">Nous assurons la promotion et la représentation de vos produits ou services
-                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block mb-5">
-                        <img src="{{ asset('assets/images/service/img55.jpg') }}" alt="Marketing relationnel"
-                            class="img-fluid" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p class="mb-4">Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Kiddi 24/7</h4>
+                            <p class="mb-4">Kiddi 24/7 aide à protéger les enfants contre les infections, améliore leur
+                                digestion et soutient leur développement cognitif pour un bien-être optimal.</p>
                         </div>
                     </div>
                 </div>
@@ -720,9 +581,10 @@
                     <div class="service-block mb-5">
                         <img src="{{ asset('assets/images/service/img56.jpg') }}" alt="Formation" class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Formation</h4>
-                            <p class="mb-4">Nous proposons des formations professionnelles adaptées pour renforcer les
-                                compétences de vos équipes et améliorer leurs performances.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Natura-Ceuticals</h4>
+                            <p class="mb-4">Natura-Ceuticals — Compléments naturels pour soutenir la santé globale.
+                                ✨ Favorise le bien-être général grâce à des ingrédients issus de la nature.
+                                💪 Aide à renforcer le système immunitaire et à maintenir un équilibre sain du corps.</p>
                         </div>
                     </div>
                 </div>
@@ -763,9 +625,9 @@
                         <img src="{{ asset('assets/images/service/img63.jpg') }}" alt="Représentation commerciale"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Représentation commerciale</h4>
-                            <p class="mb-4">Nous assurons la promotion et la représentation de vos produits ou services
-                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Vida</h4>
+                            <p class="mb-4">Vida (Lycovera) aide à protéger les cellules contre les dommages
+                                oxydatifs, favorise la santé du cœur et soutient une bonne circulation sanguine.</p>
                         </div>
                     </div>
                 </div>
@@ -774,30 +636,20 @@
                         <img src="{{ asset('assets/images/service/img64.jpg') }}" alt="Marketing relationnel"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p class="mb-4">Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">RestorLyf</h4>
+                            <p class="mb-4">RestorLyf aide à renforcer l'énergie, soutenir la récupération, ralentir le
+                                vieillissement cellulaire et maintenir un corps actif et en bonne santé.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="service-block mb-5">
-                        <img src="{{ asset('assets/images/service/img65.jpg') }}" alt="Formation" class="img-fluid" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Formation</h4>
-                            <p class="mb-4">Nous proposons des formations professionnelles adaptées pour renforcer les
-                                compétences de vos équipes et améliorer leurs performances.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img66.jpg') }}" alt="Représentation commerciale"
+                        <img src="{{ asset('assets/images/service/img66.jpg') }}" alt="Marketing relationnel"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Représentation commerciale</h4>
-                            <p class="mb-4">Nous assurons la promotion et la représentation de vos produits ou services
-                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">RestorLyf</h4>
+                            <p class="mb-4">RestorLyf aide à renforcer l'énergie, soutenir la récupération, ralentir le
+                                vieillissement cellulaire et maintenir un corps actif et en bonne santé.</p>
                         </div>
                     </div>
                 </div>
@@ -806,9 +658,9 @@
                         <img src="{{ asset('assets/images/service/img67.jpg') }}" alt="Marketing relationnel"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p class="mb-4">Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">RestorLyf</h4>
+                            <p class="mb-4">RestorLyf aide à renforcer l'énergie, soutenir la récupération, ralentir le
+                                vieillissement cellulaire et maintenir un corps actif et en bonne santé.</p>
                         </div>
                     </div>
                 </div>
@@ -816,9 +668,11 @@
                     <div class="service-block mb-5">
                         <img src="{{ asset('assets/images/service/img68.jpg') }}" alt="Formation" class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Formation</h4>
-                            <p class="mb-4">Nous proposons des formations professionnelles adaptées pour renforcer les
-                                compétences de vos équipes et améliorer leurs performances.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Natura-Ceuticals</h4>
+                            <p class="mb-4">Natura-Ceuticals — Compléments naturels pour soutenir la santé globale.
+                                ✨ Favorise le bien-être général grâce à des ingrédients issus de la nature.
+                                💪 Aide à renforcer le système immunitaire et à maintenir un équilibre sain du corps.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -827,9 +681,9 @@
                         <img src="{{ asset('assets/images/service/img69.jpg') }}" alt="Représentation commerciale"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Représentation commerciale</h4>
-                            <p class="mb-4">Nous assurons la promotion et la représentation de vos produits ou services
-                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Complet Phyto-Energizer</h4>
+                            <p class="mb-4">Complet Phyto-Energizer booste l'énergie naturelle, améliore la vitalité et
+                                soutient la résistance du corps face à la fatigue.</p>
                         </div>
                     </div>
                 </div>
@@ -838,9 +692,10 @@
                         <img src="{{ asset('assets/images/service/img80.jpg') }}" alt="Marketing relationnel"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p class="mb-4">Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Choleduz</h4>
+                            <p class="mb-4">Choleduz aide à réduire le mauvais cholestérol, protège le cœur, améliore la
+                                circulation sanguine et soutient la mémoire. Il renforce aussi l’immunité, apaise les
+                                douleurs articulaires et favorise la santé du cerveau, des yeux et de la peau.</p>
                         </div>
                     </div>
                 </div>
@@ -848,9 +703,10 @@
                     <div class="service-block mb-5">
                         <img src="{{ asset('assets/images/service/img81.jpg') }}" alt="Formation" class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Formation</h4>
-                            <p class="mb-4">Nous proposons des formations professionnelles adaptées pour renforcer les
-                                compétences de vos équipes et améliorer leurs performances.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Choleduz</h4>
+                            <p class="mb-4">Choleduz soutient la santé cardiovasculaire, aide à prévenir les maladies
+                                liées au cholestérol, renforce les fonctions cérébrales et booste le système immunitaire
+                                grâce à l’oméga-3.</p>
                         </div>
                     </div>
                 </div>
@@ -859,9 +715,9 @@
                         <img src="{{ asset('assets/images/service/img82.jpg') }}" alt="Représentation commerciale"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Représentation commerciale</h4>
-                            <p class="mb-4">Nous assurons la promotion et la représentation de vos produits ou services
-                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.</p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Choleduz</h4>
+                            <p class="mb-4">Choleduz favorise une bonne santé cardiovasculaire en réduisant le mauvais
+                                cholestérol (LDL) et en soutenant la circulation sanguine grâce à l’oméga-3.</p>
                         </div>
                     </div>
                 </div>
@@ -870,45 +726,9 @@
                         <img src="{{ asset('assets/images/service/img83.jpg') }}" alt="Marketing relationnel"
                             class="img-fluid" />
                         <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Marketing relationnel</h4>
-                            <p class="mb-4">Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block mb-5">
-                        <img src="{{ asset('assets/images/service/img52.jpg') }}" alt="Formation" class="img-fluid" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center mb-2 title-color">Formation</h4>
-                            <p class="mb-4">Nous proposons des formations professionnelles adaptées pour renforcer les
-                                compétences de vos équipes et améliorer leurs performances.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img4.jpg') }}" alt="Représentation commerciale"
-                            class="img-fluid rounded" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center  title-color">Représentation commerciale</h4>
-                            <p>
-                                Nous assurons la promotion et la représentation de vos produits ou services
-                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-block">
-                        <img src="{{ asset('assets/images/service/img7.jpg') }}" alt="Marketing relationnel"
-                            class="img-fluid rounded" />
-                        <div class="content">
-                            <h4 class="mt-4 text-center  title-color">Marketing relationnel</h4>
-                            <p>
-                                Nous mettons en place des stratégies pour construire une relation de
-                                confiance durable entre votre entreprise et vos clients.
-                            </p>
+                            <h4 class="mt-4 text-center mb-2 title-color">Nos produits</h4>
+                            <p class="mb-4"> Nous assurons la promotion et la représentation de vos produits ou services
+                                auprès de vos clients cibles pour augmenter votre chiffre d’affaires</p>
                         </div>
                     </div>
                 </div>
@@ -930,15 +750,14 @@
         </div>
     </section>
 
-
     <section class="section cta-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="cta-content">
                         <div class="divider"></div>
-                        <h2 class="mb-5 text-lg">
-                            <span class="title-color">Retrouvez la santé</span> naturellement
+                        <h2 class="mb-5 text-lg  text-white">
+                            <span class="title-color text-white">Retrouvez la santé</span> naturellement
                         </h2>
                         <a href="{{ route('contact') }}" class="btn btn-main-2 btn-round-full">
                             Prendre rendez-vous<i class="icofont-simple-right ml-2"></i>

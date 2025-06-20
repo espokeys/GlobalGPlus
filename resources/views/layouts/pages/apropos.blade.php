@@ -1,17 +1,40 @@
 @extends('layouts.master')
 
 @section('content')
-    <section class=" page-title banner_apropos">
-        <div class="container">
+    <section class="page-title banner_apropos position-relative overflow-hidden" style="min-height: 550px;">
+
+        <!-- Carousel en arrière-plan -->
+        <div id="aproposCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100"
+            data-bs-ride="carousel" data-bs-interval="3000" style="z-index: 0;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="{{ asset('assets/images/bg/img24.jpg') }}" class="d-block w-100 h-100" alt="Slide 1"
+                        style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="{{ asset('assets/images/bg/img06.jpg') }}" class="d-block w-100 h-100" alt="Slide 2"
+                        style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="{{ asset('assets/images/bg/img16.jpg') }}" class="d-block w-100 h-100" alt="Slide 3"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenu centré au-dessus -->
+        <div class="container position-relative" style="z-index: 1;">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="block text-center">
-                        <h1 class="text-capitalize text-lg "></h1>
+                    <div class="block text-center text-white">
+                        <h1 class="text-capitalize text-lg"> <!-- Ajoute ici ton titre --> </h1>
+                        <!-- Tu peux ajouter plus de contenu si besoin -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="section about-page">
         <div class="container">
@@ -103,70 +126,70 @@
         </div>
     </section>
     <!--
-                <section class="section awards">
-                    <div class="container">
-                        <div class="row align-items-center">
+                    <section class="section awards">
+                        <div class="container">
+                            <div class="row align-items-center">
 
-                            <div class="col-lg-12">
-                                <h2 class="title-color text-center mb-5" style="font-size: 42px; font-weight: 700; color: #223a66;">
-                                    Résultats de nos produits</h2>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="award-img text-center">
-                                            <img src="{{ asset('assets/images/about/3.png') }}" alt="Guérison de l'arthrite"
-                                                class="img-fluid">
-                                            <p class="mt-2">Amélioration notable des cas d’<strong>arthrite</strong> grâce à nos
-                                                solutions naturelles.</p>
+                                <div class="col-lg-12">
+                                    <h2 class="title-color text-center mb-5" style="font-size: 42px; font-weight: 700; color: #223a66;">
+                                        Résultats de nos produits</h2>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="award-img text-center">
+                                                <img src="{{ asset('assets/images/about/3.png') }}" alt="Guérison de l'arthrite"
+                                                    class="img-fluid">
+                                                <p class="mt-2">Amélioration notable des cas d’<strong>arthrite</strong> grâce à nos
+                                                    solutions naturelles.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="award-img text-center">
-                                            <img src="{{ asset('assets/images/about/4.png') }}" alt="Guérison de l'insomnie"
-                                                class="img-fluid">
-                                            <p class="mt-2">Soulagement efficace des troubles du <strong>sommeil</strong>, y compris
-                                                l’insomnie chronique.</p>
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="award-img text-center">
+                                                <img src="{{ asset('assets/images/about/4.png') }}" alt="Guérison de l'insomnie"
+                                                    class="img-fluid">
+                                                <p class="mt-2">Soulagement efficace des troubles du <strong>sommeil</strong>, y compris
+                                                    l’insomnie chronique.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="award-img text-center">
-                                            <img src="{{ asset('assets/images/about/1.png') }}" alt="Guérison des infections"
-                                                class="img-fluid">
-                                            <p class="mt-2">Renforcement des défenses naturelles contre diverses
-                                                <strong>infections</strong>.
-                                            </p>
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="award-img text-center">
+                                                <img src="{{ asset('assets/images/about/1.png') }}" alt="Guérison des infections"
+                                                    class="img-fluid">
+                                                <p class="mt-2">Renforcement des défenses naturelles contre diverses
+                                                    <strong>infections</strong>.
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="award-img text-center">
-                                            <img src="{{ asset('assets/images/about/2.png') }}" alt="Guérison des maux de tête"
-                                                class="img-fluid">
-                                            <p class="mt-2">Réduction significative des <strong>maux de tête</strong> et migraines de
-                                                manière naturelle.</p>
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="award-img text-center">
+                                                <img src="{{ asset('assets/images/about/2.png') }}" alt="Guérison des maux de tête"
+                                                    class="img-fluid">
+                                                <p class="mt-2">Réduction significative des <strong>maux de tête</strong> et migraines de
+                                                    manière naturelle.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="award-img text-center">
-                                            <img src="{{ asset('assets/images/about/5.png') }}" alt="Guérison des troubles digestifs"
-                                                class="img-fluid">
-                                            <p class="mt-2">Amélioration du confort intestinal et traitement des <strong>troubles
-                                                    digestifs</strong>.</p>
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="award-img text-center">
+                                                <img src="{{ asset('assets/images/about/5.png') }}" alt="Guérison des troubles digestifs"
+                                                    class="img-fluid">
+                                                <p class="mt-2">Amélioration du confort intestinal et traitement des <strong>troubles
+                                                        digestifs</strong>.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-6">
-                                        <div class="award-img text-center">
-                                            <img src="{{ asset('assets/images/about/6.png') }}" alt="Guérison de la fatigue chronique"
-                                                class="img-fluid">
-                                            <p class="mt-2">Lutte contre la <strong>fatigue chronique</strong> et restauration
-                                                durable
-                                                de l’énergie.</p>
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <div class="award-img text-center">
+                                                <img src="{{ asset('assets/images/about/6.png') }}" alt="Guérison de la fatigue chronique"
+                                                    class="img-fluid">
+                                                <p class="mt-2">Lutte contre la <strong>fatigue chronique</strong> et restauration
+                                                    durable
+                                                    de l’énergie.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            -->
+                    </section>
+                -->
     <section class="section team">
         <div class="container">
             <div class="row justify-content-center">

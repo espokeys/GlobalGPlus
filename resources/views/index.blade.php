@@ -3,25 +3,44 @@
 @section('content')
     <!-- Slider Start -->
     <!-- -->
-    <section class="banner">
-        <div class="container">
+    <section class="banner position-relative overflow-hidden" style="min-height: 550px;">
+
+        <!-- Carousel en arrière-plan -->
+        <div id="bannerCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100"
+            data-bs-ride="carousel" data-bs-interval="3000" style="z-index: 0;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="{{ asset('assets/images/bg/img8.jpg') }}" class="d-block w-100 h-100" alt="Slide 1"
+                        style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="{{ asset('assets/images/bg/img15.jpg') }}" class="d-block w-100 h-100" alt="Slide 2"
+                        style="object-fit: cover;">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="{{ asset('assets/images/bg/img6.jpg') }}" class="d-block w-100 h-100" alt="Slide 3"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenu texte au-dessus -->
+        <div class="container position-relative" style="z-index: 1;">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-xl-7">
-                    <div class="block">
-                        <!--<div class="divider mb-3"></div>-->
-                        <span class="text-uppercase text-sm letter-spacing text-white">
+                    <div class="block text-white">
+                        <span class="text-uppercase text-sm letter-spacing">
                             Acteur du bien-être, de la santé & de la formation
                         </span>
                         <h4 class="mb-3 mt-3" style="color: #223a66; font-size: 39px;">
-                            <span style="display: block; margin-bottom: 20px;">
+                            <span style=" color:white; display: block; margin-bottom: 20px;">
                                 Agence experte en représentation,
                             </span>
-                            <span style="display: block;">
+                            <span style="display: block;  color:white;">
                                 marketing et formation
                             </span>
                         </h4>
-
-                        <h6 class="mb-4 mt-5 text-white">
+                        <h6 class="mb-4 mt-5">
                             Bienvenue chez Global G+, où innovation, santé et formation
                             se rencontrent pour améliorer durablement la vie des populations.
                         </h6>
@@ -35,7 +54,8 @@
             </div>
         </div>
     </section>
-    <section class="features">
+
+    <section class="features d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -46,15 +66,16 @@
                             </div>
                             <span>Nos pôles d’activités</span>
                             <h4 class="mb-3">Global G+ – Stratégie & Santé</h4>
-                            <p class="mb-4">
+                            <h7 class="mb-4">
                                 Nos bureaux sont ouverts du lundi au vendredi.<br />
                                 Nous sommes spécialisés dans la Représentation commerciale, le Marketing relationnel et la
                                 Formation.
-                            </p>
+                            </h7>
                             <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">
                                 Contactez-nous
                             </a>
                         </div>
+
                         <div class="feature-item mb-5 mb-lg-0">
                             <div class="feature-icon mb-4">
                                 <i class="icofont-ui-clock"></i>
@@ -73,24 +94,26 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="feature-item mb-5 mb-lg-0">
                             <div class="feature-icon mb-4">
                                 <i class="icofont-support"></i>
                             </div>
                             <span>Contact & Support</span>
                             <h4 class="mb-3">+228 90 32 51 17</h4>
-                            <p>
+                            <h7>
                                 Pour toute demande ou assistance, notre équipe est à votre disposition pendant nos heures
                                 d'ouverture.<br />
-                                Contactez-nous par téléphone ou par email à <a
-                                    href="mailto:globalgplus@gmail.com">globalgplus@gmail.com</a>.
-                            </p>
+                                Contactez-nous par téléphone ou par email à
+                                <a href="mailto:globalgplus@gmail.com">globalgplus@gmail.com</a>.
+                            </h7>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="section about">
         <div class="container">
@@ -118,6 +141,14 @@
                             compléments alimentaires innovants, distribués via un modèle de marketing relationnel porteur
                             d'opportunités économiques.
                         </p>
+                        <style>
+                            .about-content p {
+                                padding-left: 0 !important;
+                                margin-left: 0 !important;
+                                text-indent: 0 !important;
+                            }
+                        </style>
+
 
                         <a href="{{ route('service') }}" class="btn btn-main-2 btn-round-full btn-icon">
                             Nos services<i class="icofont-simple-right ml-3"></i>
@@ -173,15 +204,13 @@
                     <div class="section-title">
                         <h2>Nos domaines d’expertise</h2>
                         <div class="divider mx-auto my-4"></div>
-                        <!--    <p>
-                                                      À travers ses activités, Global G+ combine bien-être, développement personnel et opportunité économique.
-                                                      Notre réseau repose sur un modèle éprouvé qui allie santé naturelle, marketing de réseau et formation continue.
-                                                    </p> -->
                     </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <!-- Distribution & Représentation -->
+                <div class="col-lg-4 col-12 mb-4">
                     <div class="service-item h-100">
                         <div class="icon d-flex align-items-center">
                             <i class="icofont-handshake-deal text-lg"></i>
@@ -189,14 +218,16 @@
                         </div>
                         <div class="content">
                             <p>
-                                Promotion et diffusion des produits SHINY au Togo et en Afrique, via un réseau de bureaux et
-                                d’agences privés répartis dans plusieurs pays francophones de la sous-région.
+                                Promotion et diffusion des produits SHINY au Togo et en Afrique,
+                                via un réseau de bureaux et d’agences privés répartis dans
+                                plusieurs pays francophones de la sous-région.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <!-- Marketing de réseau -->
+                <div class="col-lg-4 col-12 mb-4">
                     <div class="service-item h-100">
                         <div class="icon d-flex align-items-center">
                             <i class="icofont-network text-lg"></i>
@@ -204,15 +235,17 @@
                         </div>
                         <div class="content">
                             <p>
-                                Développement d’un réseau d’adhérents avec un système de rémunération attractif. Ce
-                                mécanisme offre à chacun l’opportunité de générer des revenus stables et d’atteindre une
-                                réelle autonomie financière.
+                                Développement d’un réseau d’adhérents avec un système de
+                                rémunération attractif. Ce mécanisme offre à chacun l’opportunité
+                                de générer des revenus stables et d’atteindre une réelle autonomie
+                                financière.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <!-- Formation & Leadership -->
+                <div class="col-lg-4 col-12 mb-4">
                     <div class="service-item h-100">
                         <div class="icon d-flex align-items-center">
                             <i class="icofont-education text-lg"></i>
@@ -220,18 +253,16 @@
                         </div>
                         <div class="content">
                             <p>
-                                Séances de formation sur le leadership, le développement personnel, l’autonomie financière,
-                                la santé holistique, le marketing relationnel et la stratégie commerciale pour renforcer les
-                                compétences de nos adhérents.
+                                Séances de formation sur le leadership, le développement personnel,
+                                l’autonomie financière, la santé holistique, le marketing relationnel
+                                et la stratégie commerciale pour renforcer les compétences de nos adhérents.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
 
     <section class="section testimonial-2 gray-bg" style="padding-top: 0px">
         <div class="container">
@@ -241,8 +272,8 @@
                         <h2>Plus de 5000 clients satisfaits</h2>
                         <div class="divider mx-auto my-4"></div>
                         <!--     <p>
-                                                      Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
-                                                    </p> -->
+                                                                                                              Reconnue pour son expertise et son engagement, Global G+ accompagne depuis des années ses clients dans leur croissance commerciale, leur développement personnel et leur bien-être au quotidien.
+                                                                                                            </p> -->
                     </div>
                 </div>
             </div>
@@ -336,77 +367,27 @@
         </div>
     </section>
 
-
     <section class="section clients">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="section-title text-center">
-                        <h2>Nos partenaires de confiance</h2>
-                        <div class="divider mx-auto my-4"></div>
-                        <p>
-                            Global G+ collabore avec des partenaires stratégiques pour une meilleure santé.
-                        </p>
-                    </div>
+                <div class="col-lg-7 text-center">
+                    <h2>Nos partenaires de confiance</h2>
+                    <div class="divider mx-auto my-4"></div>
+                    <p>Global G+ collabore avec des partenaires stratégiques pour une meilleure santé.</p>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row clients-logo">
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 1" class="img-fluid" />
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4 mt-5">
+                    <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 1" class="img-fluid" />
                 </div>
                 <!--
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 3" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 4" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 5" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 6" class="img-fluid" />
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 3" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 4" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 5" class="img-fluid" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="client-thumb">
-                                <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 6" class="img-fluid" />
-                            </div>
-                        </div>
-                        -->
+                                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+                                    <img src="{{ asset('assets/images/logo_shiny.png') }}" alt="Partenaire 2" class="img-fluid" />
+                                  </div>
+                                  -->
             </div>
         </div>
     </section>
