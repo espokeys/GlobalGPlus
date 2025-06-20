@@ -9,7 +9,7 @@
     <title>Global G+Sarl</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ secure_secure_asset('assets/images/logo.jpg') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ secure_asset('assets/images/logo.jpg') }}" />
 
     <!-- Feuilles de style -->
     <link rel="stylesheet" href="{{ secure_asset('assets/ITSolution/css/animate.css') }}">
